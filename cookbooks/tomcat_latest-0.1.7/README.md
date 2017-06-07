@@ -8,7 +8,7 @@ Requirements
 
 Platform:
 
-* Suse, CentOS, Fedora, Ubuntu, Debian
+* Redhat 
 
 The following Opscode cookbooks are dependencies:
 
