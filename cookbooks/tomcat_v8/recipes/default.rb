@@ -76,7 +76,11 @@ script "Move the package" do
 	user "#{tomcat_user}"
 	cwd "/tmp"
 	code <<-EOH
-		cd #{tomcat_install_dir} ; mv apache-tomcat-* apache-tomcat
+		if [[ ! -d /opt/apache/tomcat/apache-tomcat  ]] ; then
+			cd #{tomcat_install_dir} ; mv apache-tomcat-* apache-tomcat
+		else
+			echo "Directory already exists"
+		fi
 	EOH
 end
 

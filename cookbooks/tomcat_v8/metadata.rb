@@ -4,7 +4,7 @@ maintainer_email 'you@example.com'
 license 'All Rights Reserved'
 description 'Installs/Configures tomcat_v8'
 long_description 'Installs/Configures tomcat_v8'
-version '0.8.0'
+version '1.5.0'
 chef_version '>= 12.1' if respond_to?(:chef_version)
 
 ## Depends on Java v8 and later
